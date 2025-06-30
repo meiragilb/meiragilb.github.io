@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Cam</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fafafa;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cat Cam 🐾</h1>
+
+  <div class="grid">
+    <img src="cat1.jpg" alt="Cat 1">
+    <img src="cat2.jpg" alt="Cat 2">
+    <img src="cat3.jpg" alt="Cat 3">
+    <img src="cat4.jpg" alt="Cat 4">
+    <!-- Add more as needed -->
+  </div>
+
+</body>
+</html>
